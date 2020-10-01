@@ -1,17 +1,12 @@
 #include <stdio.h>
-int main (){
-	int n,a=1,b=1,c=0;
-	do{
-		printf("nhap so n=");
-		scanf("%d",&n);
-		
-	}while(n <0);
-	for(;a<=n;a++){
-		a=a*b;
-		c=c+a;
+int main(){
+	int S=0;
+	for(int i=0 j =0;j<100;i++){
+	for(int i=0,j=0;j<100;i++){
+		if(i%2!=0){
+			S+=i;
+			j++;
+		}
 	}
-	printf("%d",c);
-	
-	
-	}
-
+	printf("S= %d",S);
+}
